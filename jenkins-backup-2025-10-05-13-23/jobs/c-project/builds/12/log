@@ -1,0 +1,43 @@
+Started by timer
+Running as SYSTEM
+Building remotely on [8mha:////4CCKMJVmHtpYx1ME7CNSaWE6fD3b/c3kH6YSOlC2wWSPAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYx/eT83ILSktQi/TygO3UT01PzSgz1ASgMoWbLAAAA[0mnode-agent1 (slave) in workspace /home/ubuntu/workspace/c-project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ubuntu/workspace/c-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/shanthish16/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/shanthish16/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/shanthish16/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 5a889f6b510dca267b5e7eebbe256d71f5b6b2f2 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5a889f6b510dca267b5e7eebbe256d71f5b6b2f2 # timeout=10
+Commit message: "updated webhooks-testing"
+ > git rev-list --no-walk 5a889f6b510dca267b5e7eebbe256d71f5b6b2f2 # timeout=10
+[c-project] $ /bin/bash /tmp/jenkins3361716360539807010.sh
+Building in: /home/ubuntu/workspace/c-project
+=== Starting Jenkins Backup ===
+cp: cannot stat '/var/lib/jenkins/*': No such file or directory
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/ubuntu/workspace/c-project/jenkins_backup/.git/
+Switched to a new branch 'main'
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:shanthish16/Jenkins-backup.git'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,102 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@5.7.0">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/shanthish16/c-project.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/main</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="empty-list"/>
+    <extensions/>
+  </scm>
+  <assignedNode>built-in</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec>H 18 * * *</spec>
+    </hudson.triggers.TimerTrigger>
+    <com.cloudbees.jenkins.GitHubPushTrigger plugin="github@1.45.0">
+      <spec></spec>
+    </com.cloudbees.jenkins.GitHubPushTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+
+# ====== CONFIGURATION ======
+DATE=$(date +%F-%H-%M)
+REPO_DIR=&quot;$WORKSPACE/git-backup&quot;          # Dedicated Git repo folder
+BACKUP_DIR=&quot;$REPO_DIR/jenkins-backup-$DATE&quot;
+JENKINS_HOME=&quot;/var/lib/jenkins&quot;
+BRANCH=&quot;main&quot;
+CREDENTIALS_NAME=&quot;Jenkins Backup Bot&quot;
+CREDENTIALS_EMAIL=&quot;jenkins@example.com&quot;
+GIT_REPO=&quot;git@github.com:shanthish16/Jenkins-backup.git&quot;
+# ============================
+
+echo &quot;Creating backup directory at: $BACKUP_DIR&quot;
+mkdir -p &quot;$BACKUP_DIR&quot;
+
+echo &quot;Copying Jenkins data...&quot;
+cp -r &quot;$JENKINS_HOME/jobs&quot; &quot;$BACKUP_DIR/&quot;
+cp -r &quot;$JENKINS_HOME/plugins&quot; &quot;$BACKUP_DIR/&quot;
+cp -r &quot;$JENKINS_HOME/users&quot; &quot;$BACKUP_DIR/&quot;
+cp &quot;$JENKINS_HOME/config.xml&quot; &quot;$BACKUP_DIR/&quot;
+cp &quot;$JENKINS_HOME/credentials.xml&quot; &quot;$BACKUP_DIR/&quot; 2&gt;/dev/null || echo &quot;No credentials.xml found.&quot;
+
+echo &quot;Initializing Git repo...&quot;
+cd &quot;$REPO_DIR&quot;
+if [ ! -d &quot;.git&quot; ]; then
+    git init
+    git remote add origin &quot;$GIT_REPO&quot;
+    git checkout -b &quot;$BRANCH&quot;
+else
+    git fetch origin &quot;$BRANCH&quot;
+    git checkout &quot;$BRANCH&quot;
+    git pull --rebase origin &quot;$BRANCH&quot; || echo &quot;⚠ No remote branch to rebase, continuing...&quot;
+fi
+
+git config user.email &quot;$CREDENTIALS_EMAIL&quot;
+git config user.name &quot;$CREDENTIALS_NAME&quot;
+
+echo &quot;Adding and committing backup...&quot;
+git add .
+git commit -m &quot;Jenkins Backup on $DATE&quot; || echo &quot;⚠ Nothing to commit.&quot;
+
+echo &quot;Pushing to GitHub...&quot;
+# Use --force if you want Jenkins to always overwrite remote
+git push origin &quot;$BRANCH&quot; || git push --force origin &quot;$BRANCH&quot;
+
+echo &quot;✅ Backup completed and pushed to GitHub.&quot;
+</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>jobB</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
+  </publishers>
+  <buildWrappers/>
+</project>

@@ -1,0 +1,44 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>c-project</upstreamProject>
+            <upstreamUrl>job/c-project/</upstreamUrl>
+            <upstreamBuild>10</upstreamBuild>
+            <upstreamCauses>
+              <com.cloudbees.jenkins.GitHubPushCause plugin="github@1.45.0">
+                <pushedBy>shanthish16</pushedBy>
+              </com.cloudbees.jenkins.GitHubPushCause>
+              <com.cloudbees.jenkins.GitHubPushCause reference="../com.cloudbees.jenkins.GitHubPushCause"/>
+              <com.cloudbees.jenkins.GitHubPushCause reference="../com.cloudbees.jenkins.GitHubPushCause"/>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.2.33-484.v2fcd689980d1">
+      <queuingDurationMillis>8577</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>1</buildableDurationMillis>
+      <waitingDurationMillis>8574</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+  </actions>
+  <queueId>16</queueId>
+  <timestamp>1759124403899</timestamp>
+  <startTime>1759124403907</startTime>
+  <result>SUCCESS</result>
+  <duration>37</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>node-agent1</builtOn>
+  <workspace>/home/ubuntu/workspace/JobB</workspace>
+  <hudsonVersion>2.516.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+</build>
