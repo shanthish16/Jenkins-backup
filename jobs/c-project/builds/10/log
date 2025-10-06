@@ -1,0 +1,33 @@
+Started by GitHub push by shanthish16
+Started by GitHub push by shanthish16
+Started by GitHub push by shanthish16
+Running as SYSTEM
+Building remotely on [8mha:////4CCKMJVmHtpYx1ME7CNSaWE6fD3b/c3kH6YSOlC2wWSPAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYx/eT83ILSktQi/TygO3UT01PzSgz1ASgMoWbLAAAA[0mnode-agent1 (slave) in workspace /home/ubuntu/workspace/c-project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ubuntu/workspace/c-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/shanthish16/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/shanthish16/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/shanthish16/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 5a889f6b510dca267b5e7eebbe256d71f5b6b2f2 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5a889f6b510dca267b5e7eebbe256d71f5b6b2f2 # timeout=10
+Commit message: "updated webhooks-testing"
+ > git rev-list --no-walk 228ddbdb98d2d01de12ea83a7ee868d0b7837cad # timeout=10
+[c-project] $ /bin/sh -xe /tmp/jenkins11408959603732994199.sh
++ echo Building in: /home/ubuntu/workspace/c-project
+Building in: /home/ubuntu/workspace/c-project
++ cd /home/ubuntu/workspace/c-project
++ make clean
+rm -f *.o *.exe
++ make all
+gcc -Wall -g -c big3.c -o big3.o
+gcc -o big3.exe big3.o
+gcc -Wall -g -c fact.c -o fact.o
+gcc -o fact.exe fact.o
+Triggering a new build of [8mha:////4OFJQx/XNKa0kBsIE/9SBb/dCiOd/tyY8jbZrQfwQmjdAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/az8JH2v/CQnfQAW71zYvwAAAA==[0mJobB
+Finished: SUCCESS

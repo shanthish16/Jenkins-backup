@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.3
+Build-Jdk-Spec: 17
+Specification-Title: Artifact Manager Artifactory Plugin
+Specification-Version: 0.0
+Implementation-Title: Artifact Manager Artifactory Plugin
+Implementation-Version: 252.v944a_69ea_4873
+Group-Id: io.jenkins.plugins
+Artifact-Id: artifactory-artifact-manager
+Short-Name: artifactory-artifact-manager
+Long-Name: Artifact Manager Artifactory Plugin
+Url: https://github.com/jenkinsci/artifactory-artifact-manager-plugin
+Plugin-Version: 252.v944a_69ea_4873
+Hudson-Version: 2.492.3
+Jenkins-Version: 2.492.3
+Plugin-Dependencies: artifactory-client-api:2.19.0-92.v57b_50df9c76f,wor
+ kflow-api:1373.v7b_813f10efa_b_,workflow-step-api:704.ve4f0967e98fa_;re
+ solution:=optional,credentials-binding:702.vfe613e537e88,credentials:14
+ 17.vd854994a_f6b_e,plain-credentials:199.v9f8e1f741799
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/license/mit/
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/artifactory-a
+ rtifact-manager-plugin
+Plugin-ScmTag: 944a69ea4873c4972fcc2da8b79f7450eb8b8356
+Plugin-ScmUrl: https://github.com/jenkinsci/artifactory-artifact-manager
+ -plugin
+Implementation-Build: 944a69ea4873c4972fcc2da8b79f7450eb8b8356
+

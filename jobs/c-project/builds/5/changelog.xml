@@ -1,0 +1,11 @@
+commit 580ebb1f87101a64689e9d90559ab91b8310c52e
+tree 85cb9c59fd4173e1bd46cce2698f3682616cfe4f
+parent 11c25a4a644de45b15cefa855cf5e6edebf32419
+author Ubuntu <ubuntu@ip-172-31-44-170.eu-north-1.compute.internal> 2025-09-17 11:37:07 +0000
+committer Ubuntu <ubuntu@ip-172-31-44-170.eu-north-1.compute.internal> 2025-09-17 11:37:07 +0000
+
+    Fix non-breaking spaces and clean Makefile
+
+
+:100644 100644 47d2ad9848282a54df27da7be3412ad511bab6c6 c6cea3ff39713ed00f50800c0cd73c589b2a3fc8 M	big3.c
+:100644 100644 6184a31f7dd6af8e401bd8d777060953c94fff5b c83591fb868a2789c547392339b0f051a4ac4bfd M	fact.c

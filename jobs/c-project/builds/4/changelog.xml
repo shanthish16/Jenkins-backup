@@ -1,0 +1,10 @@
+commit 11c25a4a644de45b15cefa855cf5e6edebf32419
+tree 7bc016cb614d60b1954ff49497b908b915b89d0d
+parent 7a65fa49cccbb395d69d109e35b91c826b0d42d2
+author Ubuntu <ubuntu@ip-172-31-44-170.eu-north-1.compute.internal> 2025-09-17 11:25:37 +0000
+committer Ubuntu <ubuntu@ip-172-31-44-170.eu-north-1.compute.internal> 2025-09-17 11:25:37 +0000
+
+    Fix Makefile: added clean target and correct file paths
+
+
+:100644 100644 9ebd36733ad0d3b31a1582933ce573d2f0e8ecf4 c0f0eb4948ae22abb79abb4a79433718eada4a40 M	Makefile

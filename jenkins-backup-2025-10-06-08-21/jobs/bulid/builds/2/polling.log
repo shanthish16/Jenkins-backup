@@ -1,0 +1,22 @@
+Started on Sep 27, 2025, 2:00:04 PM
+Started by event from 140.82.115.168 ⇒ http://16.171.173.40:8080/github-webhook/ on Sat Sep 27 14:00:04 UTC 2025
+Polling SCM changes on built-in
+Using strategy: Default
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/bulid/.git # timeout=10
+Fetching changes from the remote Git repositories
+ > git config remote.origin.url https://github.com/shanthish16/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/shanthish16/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/shanthish16/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Polling for changes in
+Seen branch in repository origin/branch-rel
+Seen branch in repository origin/main
+Seen branch in repository origin/webhooks
+Seen 3 remote branches
+ > git show-ref --tags -d # timeout=10
+ > git log --full-history --no-abbrev --format=raw -M -m --raw -1 b45fd9f9fc567ab5b30d46223a6f9fd817d85b95 # timeout=10
+Done. Took 0.71 sec
+Changes found

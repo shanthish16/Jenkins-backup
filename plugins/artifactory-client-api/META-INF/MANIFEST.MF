@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.3
+Build-Jdk-Spec: 17
+Specification-Title: Artifactory Client API Plugin
+Specification-Version: 2.19
+Implementation-Title: Artifactory Client API Plugin
+Implementation-Version: 2.19.0-116.vc6e7efff0e6b_
+Group-Id: io.jenkins.plugins
+Artifact-Id: artifactory-client-api
+Short-Name: artifactory-client-api
+Long-Name: Artifactory Client API Plugin
+Url: https://github.com/jenkinsci/artifactory-client-api-plugin
+Plugin-Version: 2.19.0-116.vc6e7efff0e6b_
+Hudson-Version: 2.492.3
+Jenkins-Version: 2.492.3
+Plugin-Dependencies: commons-lang3-api:3.18.0-98.v3a_674c06072d,apache-h
+ ttpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83,jackson2-api:2.18
+ .3-402.v74c4eb_f122b_2
+Plugin-Developers: 
+Support-Dynamic-Loading: true
+Plugin-License-Name: Apache 2
+Plugin-License-Url: http://www.apache.org/licenses/
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/artifactory-c
+ lient-api-plugin
+Plugin-ScmTag: c6e7efff0e6b22763cafb080fdc162e09124d3fa
+Plugin-ScmUrl: https://github.com/jenkinsci/artifactory-client-api-plugi
+ n
+Implementation-Build: c6e7efff0e6b22763cafb080fdc162e09124d3fa
+

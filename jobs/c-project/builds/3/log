@@ -1,0 +1,29 @@
+Started by user [8mha:////4NR6O/qbt2gjNtB63mKoS1gaU9BTNfzCD+zUG8fl2f7tAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mABC
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/c-project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/c-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/shanthish16/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/shanthish16/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/shanthish16/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 7a65fa49cccbb395d69d109e35b91c826b0d42d2 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7a65fa49cccbb395d69d109e35b91c826b0d42d2 # timeout=10
+Commit message: "updated makefile"
+ > git rev-list --no-walk 7a65fa49cccbb395d69d109e35b91c826b0d42d2 # timeout=10
+[c-project] $ /bin/sh -xe /tmp/jenkins12864420924093776245.sh
++ echo Building in: /var/lib/jenkins/workspace/c-project
+Building in: /var/lib/jenkins/workspace/c-project
++ cd /var/lib/jenkins/workspace/c-project
++ make clean
+make: *** No rule to make target 'clean'.  Stop.
++ true
++ make big3.exe fact.exe
+make: *** No rule to make target 'big3.exe fact.exe'.  Stop.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
