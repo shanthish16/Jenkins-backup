@@ -1,0 +1,27 @@
+Started by GitHub push by shanthish16
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/bulid
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/bulid/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/shanthish16/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/shanthish16/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/shanthish16/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/branch-rel
+Seen branch in repository origin/main
+Seen branch in repository origin/webhooks
+Seen 3 remote branches
+ > git show-ref --tags -d # timeout=10
+Checking out Revision b45fd9f9fc567ab5b30d46223a6f9fd817d85b95 (origin/webhooks)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b45fd9f9fc567ab5b30d46223a6f9fd817d85b95 # timeout=10
+Commit message: "Create test-4"
+First time build. Skipping changelog.
+[bulid] $ /bin/sh -xe /tmp/jenkins7321517003867595780.sh
+[bulid] $ /bin/sh -xe /tmp/jenkins5204405365198495622.sh
++ echo hello
+hello
+Finished: SUCCESS

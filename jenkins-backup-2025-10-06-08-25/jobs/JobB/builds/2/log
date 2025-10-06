@@ -1,0 +1,9 @@
+Started by upstream project "[8mha:////4Hg7UcrkwMkqsCLCabh0ZFiuFtFZ0yQoY76LZ4ZQjXQxAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZ+/az8JP1k3YKi/KzU5BJ9AEcXS2nEAAAA[0mc-project" build number [8mha:////4GU7z8ytwgGVat8lH9ooLTKGM2YWCKSkMyk7tRizXCQeAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBgH9rPwk/WTdgqL8rNTkEn1LALuE3inFAAAA[0m9
+originally caused by:
+ Started by GitHub push by shanthish16
+Running as SYSTEM
+Building remotely on [8mha:////4CCKMJVmHtpYx1ME7CNSaWE6fD3b/c3kH6YSOlC2wWSPAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYx/eT83ILSktQi/TygO3UT01PzSgz1ASgMoWbLAAAA[0mnode-agent1 (slave) in workspace /home/ubuntu/workspace/JobB
+[JobB] $ /bin/sh -xe /tmp/jenkins2120749394470036468.sh
++ echo Job B running after Job A
+Job B running after Job A
+Finished: SUCCESS
